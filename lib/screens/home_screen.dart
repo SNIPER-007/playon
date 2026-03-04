@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/ground_card.dart';
+import 'my_bookings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF081626),
 
-      // 🔥 PREMIUM APP BAR (FIXED)
+      // 🔥 PREMIUM APP BAR
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100),
         child: SafeArea(
@@ -57,16 +58,33 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
 
-                // RIGHT SIDE
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: Colors.white10,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const Icon(Icons.notifications,
-                      color: Colors.white),
-                )
+                // RIGHT SIDE (MY BOOKINGS + NOTIFICATIONS)
+                Row(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.bookmark, color: Colors.white),
+                      tooltip: "My Bookings",
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                const MyBookingsScreen(),
+                          ),
+                        );
+                      },
+                    ),
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white10,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Icon(Icons.notifications,
+                          color: Colors.white),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
