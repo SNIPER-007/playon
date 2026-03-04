@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "611733673380",
+    "project_id": "playon-b88c4",
+    "storage_bucket": "playon-b88c4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611733673380:android:f2c672efcdd196f23c9d31",
+        "android_client_info": {
+          "package_name": "com.chittansh.playon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR1cfWSyd-2ymuPyYIN6e8j50o50ZiMlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611733673380:android:ae7afba3a0cdb4e73c9d31",
+        "android_client_info": {
+          "package_name": "com.example.playon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR1cfWSyd-2ymuPyYIN6e8j50o50ZiMlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
